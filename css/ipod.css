@@ -17,31 +17,37 @@ body {
 	width: 300px;
 	height: 45px;
 	text-align: center;
-	background-color: #e6ccff;
+	background-color: #212121;
 	color: white;
 }
 
-.head-bar > h1 {
-	text-shadow: 1px 1px #000;
-}
-
+.head-bar > a {
+	text-decoration: none;
+} 
+ 
 .back-button {
-	position: relative;
-	width: 50px;
-	height: 30px;
-	background-color: #D3D3D3;
-	border: 1px solid #fff;
-	left: 10px;
-	top: 6.5px;
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin: 5px;
 }
 
 .back-button > a {
 	text-decoration: none;
+} 
+
+.menu-button {
+	float: right;
+	top: 0;
+	width: 35px;
+	height: 35px;
+	margin: 5px;
 }
 
-.back-button > a > h3 {
-	color: #551A8B;
-	text-align: center;
-	font-size: 32px;
-	margin-top: -5px;
+.header {
+	padding-top: 4px;
+	margin-right: 45px;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 28px;
 }
