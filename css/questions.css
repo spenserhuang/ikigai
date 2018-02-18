@@ -1,0 +1,100 @@
+/* PROMPT */
+.prompt {
+    text-align: center;
+    margin: 80px 30px 20px 30px;
+    font-size: 32px;
+    color: #212121;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 225px;
+    height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #212121;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+button {
+    background: none;
+    padding: 0;
+    font: inherit;
+}
+
+.add-button {
+    position: relative;
+    margin: -41px 0 0 232px;
+    float: left;
+    width: 30px;
+    height: 22.5px;
+    border: none;
+}
+
+.add-button > img {
+    width: 22.5px;
+    height: 22.5px;
+}
+
+/* ANSWERS */
+.responses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.response-item {
+    border: 1px solid #212121;
+    margin: 5px 0;
+}
+
+
+/* DONE  */
+
+.done-button {
+    position: absolute;
+    left: 135px;
+    bottom: 100px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #59C3C3;
+    border-radius: 30px;
+}
+
+.done-button > img {
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
