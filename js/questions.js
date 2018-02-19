@@ -5,20 +5,29 @@ window.onload = function() {
         var div = document.createElement("div");
         div.className = "response-item";
         div.id = "item" + responseCounter;
-        responseCounter ++;
         
         var divContent = document.createElement("p");
         var input = document.getElementById("input").value;
         divContent.innerHTML = input;
         div.appendChild(divContent);
         
-        var cancel = $('<img />').attr({"src": "../img/cancel-black.png"}).appendTo(div);
-
+        var cancel = document.createElement("img");
+        cancel.src = "../img/cancel-black.png";
+        cancel.id = "cancel" + responseCounter;
+        div.appendChild(cancel);
+        
+        cancel.onclick = deleteNode;
+        
         document.getElementById("responses").appendChild(div);
         
         $("input").val("");
+        responseCounter ++;
     });
-    
+}
+
+function deleteNode(mouseEvent) {
+    parentId = this.id.substr(6);
+    $("#item" + parentId).remove();
 }
 
 
