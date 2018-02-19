@@ -41,7 +41,7 @@ button {
 }
 
 /* ANSWERS */
-.responses {
+.responses {    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -85,30 +85,3 @@ button {
 .done-button > img {
     height: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

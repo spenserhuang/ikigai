@@ -32,10 +32,6 @@ body {
 	margin: 0px;
 }
 
-.back-button > a {
-	text-decoration: none;
-} 
-
 .menu-button {
 	float: right;
 	top: 0;
@@ -48,6 +44,12 @@ body {
 	padding-top: 4px;
 	margin-right: 45px;
 	color: #FFF;
-	font-weight: 500;
+	font-weight: 200;
 	font-size: 28px;
+}
+
+button {
+    background: none;
+    padding: 0;
+    font: inherit;
 }
