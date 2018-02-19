@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Add-Event</title>
+    <title>add_event</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/common.css" />
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/common.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -65,17 +65,14 @@
                     <input type="text" class="general-input" id="note" placeholder="Note" />
                 </div>
                 <div class="">
-                    <i class="material-icons content-icon">donut_large</i>
-                    <div class="remind-box">
-                        <span class="remind">Add Ikigai Tags:</span>
-                    </div>
-                    <table>
+                    <i class="material-icons content-icon inline">donut_large</i>
+                    <span class="remind inline">Add Ikigai Tags:</span>
+                    <table class="i-table">
                         <tr>
-                            <td width="45px"></td>
-                            <td width="80px"><div class="ikigai-choice pointer noselect" id="ikigai-love">Love</div></td>
-                            <td width="80px"><div class="ikigai-choice1 pointer noselect" id="ikigai-good">Good</div></td>
-                            <td width="80px"><div class="ikigai-choice1 pointer noselect" id="ikigai-need">Need</div></td>
-                            <td width="80px"><div class="ikigai-choice pointer noselect" id="ikigai-paid">Paid</div></td>
+                            <td><div class="ikigai-choice pointer noselect" id="ikigai-love">Love&nbsp;<i class="material-icons i-c">close</i></div></td>
+                            <td><div class="ikigai-choice pointer noselect" id="ikigai-good">Good&nbsp;<i class="material-icons i-c">close</i></div></td>
+                            <td><div class="ikigai-choice pointer noselect" id="ikigai-need">Need&nbsp;<i class="material-icons i-c">close</i></div></td>
+                            <td><div class="ikigai-choice pointer noselect" id="ikigai-paid">Paid&nbsp;<i class="material-icons i-c">close</i></div></td>
                         </tr>
                     </table>
                 </div>
@@ -84,6 +81,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="js/addevent.js"></script>
+    <script type="text/javascript" src="../js/addevent.js"></script>
 </body>
 </html>

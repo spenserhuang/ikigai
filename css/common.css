@@ -1,11 +1,13 @@
 ﻿.wrapper {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 500px;
-    border: 1px solid #d4d4d4;
-    box-shadow: 2px 2px 2px #888888;
+    background-image: url(../img/iphoneOL.jpg);
+	background-repeat: no-repeat;
+    width: 360px;
+    /*border: 1px solid #d4d4d4;*/
+    /*box-shadow: 2px 2px 2px #888888;*/
     overflow: hidden;
-    min-height: 800px;
+    min-height: 530px;
+    padding-left: 32px;
+    padding-top: 106px;
 }
 
 .inline {
@@ -13,8 +15,8 @@
 }
 
 .navigator {
-    width: 100%;
-    height: 46px;
+    width: 300px;
+    height: 45px;
     overflow: hidden;
     background-color: #8f00e6;
     color: white;
@@ -27,7 +29,7 @@
 }
 
 #navigator-save {
-    margin-left: 300px;
+    margin-left: 100px;
     font-size: 22px;
     margin-right: 10px;
 }
@@ -43,19 +45,21 @@
 
 .content {
     padding: 8px;
+    min-height: 600px;
 }
 
 .input-grid {
     border-bottom: 1px solid #888888;
-    padding-bottom: 25px;
+    padding-bottom: 7px;
+    width: 280px;
 }
 
 .general-input {
     border: none;
-    width: 100%;
+    width: 270px;
     padding: 5px;
     height: 35px;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .content-icon {
@@ -65,22 +69,22 @@
 }
 
 .input-date {
-    width: 62px;
+    width: 35px;
     border: 1px solid #808080;
-    height: 25px;
-    font-size: 18px;
-    margin:0 5px;
+    height: 20px;
+    font-size: 13px;
+    margin:0 2px;
 }
 
 .sign-date {
-    margin-left: 35px;
-    font-size: 20px;
+    margin-left: 20px;
+    font-size: 15px;
     margin-right: 10px;
 }
 
 .date-split{
-    font-size: 22px;
-    margin: 0 5px;
+    font-size: 4px;
+    margin: 0 1px;
 }
 
 .date-row{
@@ -92,12 +96,14 @@
 }
 
 .wholeday {
-    font-size: 25px;
+    font-size: 17px;
     padding-top: 3px;
 }
 
 #location, #note {
-    margin-left: 40px;
+    margin-left: 20px;
+    width: 270px;
+    height: 20px;
 }
 
 #remind {
@@ -106,34 +112,36 @@
 }
 
 .remind {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .remind-box {
     margin-left: 40px;
 }
 
-.ikigai-choice {
-    border: 1px solid black;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    font-size: 22px;
-    padding-left: 6px;
-    padding-top: 13px;
+.remind-box1 {
+    width: 200px;
 }
 
-.ikigai-choice1 {
+.ikigai-choice {
     border: 1px solid black;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    font-size: 22px;
-    padding-left: 2px;
-    padding-top: 13px;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    padding-left: 3px;
 }
 
 .noselect {
     -webkit-user-select: none;
     user-select: none;
+    margin-left: 15px;
+}
+
+.i-table {
+    margin-top: 8px;
+}
+
+.i-c {
+    font-size: 10px;
+    font-weight: 700;
 }
