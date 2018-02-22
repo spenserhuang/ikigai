@@ -1,8 +1,8 @@
 ﻿$(function () {
     var paid = (sessionStorage.hasOwnProperty("paid") ? sessionStorage.getItem("paid") : "nothing").split(",");
-    var good = (sessionStorage.hasOwnProperty("paid") ? sessionStorage.getItem("paid") : "nothing").split(",");
-    var need = (sessionStorage.hasOwnProperty("paid") ? sessionStorage.getItem("paid") : "nothing").split(",");
-    var love = (sessionStorage.hasOwnProperty("paid") ? sessionStorage.getItem("paid") : "nothing").split(",");
+    var good = (sessionStorage.hasOwnProperty("good") ? sessionStorage.getItem("good") : "nothing").split(",");
+    var need = (sessionStorage.hasOwnProperty("need") ? sessionStorage.getItem("need") : "nothing").split(",");
+    var love = (sessionStorage.hasOwnProperty("love") ? sessionStorage.getItem("love") : "nothing").split(",");
     $("#paid")[0].innerHTML = paid[0];
     $("#good")[0].innerHTML = good[0];
     $("#need")[0].innerHTML = need[0];
