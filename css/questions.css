@@ -41,7 +41,7 @@ button {
 }
 
 /* ANSWERS */
-.responses {    
+.responses {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -54,7 +54,7 @@ button {
     margin: 5px 5px;
     padding: 3px 10px;
     background-color: #FFF;
-    
+
 }
 
 .response-item > p {
@@ -71,19 +71,36 @@ button {
     cursor: pointer;
 }
 
-/* DONE  */
+/* ARROWS  */
 
-.done-button {
+.button {
+  display: inline-block;
+}
+
+.next-button {
     position: absolute;
-    left: 135px;
+    top: 580px;
+    left: 210px;
     bottom: 130px;
-    width: 100px;
-    height: 30px;
+    width: 75px;
+    height: 35px;
     border: none;
     background-color: #59C3C3;
     border-radius: 30px;
 }
 
-.done-button > img {
+.back-button {
+    position: absolute;
+    top: 580px;
+    left: 80px;
+    bottom: 130px;
+    width: 75px;
+    height: 35px;
+    border: none;
+    background-color: #59C3C3;
+    border-radius: 30px;
+}
+
+.button > img {
     height: 30px;
 }
