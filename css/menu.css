@@ -10,10 +10,15 @@
 }
 
 .menu-item > h2 {
-    text-align: center;
     font-weight: 300;
     color: #FFF;
     margin-top: 16px;
+}
+
+.menu-item > img {
+    float: left;
+    margin: 15px 10px 0 70px;
+    width: 35px;
 }
 
 .menu-title {
