@@ -1,0 +1,99 @@
+.menu-all {
+    height: 530px;
+    width: 300px;  
+}
+
+.menu-item {
+    height: 64.3px;
+    border: 1px solid #FFF;
+    background-color: #4062BB;
+}
+
+.menu-item > h2 {
+    text-align: center;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.menu-title {
+    background-color: #52489C;
+}
+
+.menu-title > h2 {
+    float: left;
+    margin: 10px 0px 10px 110px;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.menu-title > a > img {
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px 0 0;
+}
+
+
+form {
+    margin-top: 16px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 225px;
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #212121;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+button {
+    background: none;
+    padding: 0;
+    font: inherit;
+}
+
+.search-button {
+    position: relative;
+    margin: -41px 0 0 232px;
+    float: left;
+    width: 30px;
+    height: 22.5px;
+    border: none;
+}
+
+.search-button > img {
+    width: 22.5px;
+    height: 22.5px;
+}
+
+.menu-search {
+    
+}
+
+.menu-priority-list {
+    
+}
+
+.menu-calendar {
+    
+}
+
+.menu-notes {
+    
+}
+
+.menu-my-ikigai {
+    
+}
+
+.menu-settings {
+    
+}
+
+.menu-about {
+    
+}
