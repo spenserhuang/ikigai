@@ -25,19 +25,19 @@ a {
 	text-decoration: none;
 } 
  
-.back-button {
-	float: left;
-	width: 45px;
-	height: 45px;
-	margin: 0px;
-}
-
 .menu-button {
-	float: right;
-	top: 0;
+	float: left;
 	width: 35px;
 	height: 35px;
-	margin: 5px;
+	margin: 5px 0 5px 5px;
+}
+
+.home-button {
+	float: right;
+	top: 0;
+	width: 33px;
+	height: 33px;
+	margin: 6px 6px 6px 0;
 }
 
 .header {
