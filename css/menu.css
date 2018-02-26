@@ -13,6 +13,7 @@
     text-align: center;
     font-weight: 300;
     color: #FFF;
+    margin-top: 16px;
 }
 
 .menu-title {
@@ -57,7 +58,7 @@ button {
 
 .search-button {
     position: relative;
-    margin: -41px 0 0 232px;
+    margin: -43px 0 0 226px;
     float: left;
     width: 30px;
     height: 22.5px;
