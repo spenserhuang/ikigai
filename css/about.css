@@ -1,0 +1,32 @@
+.about-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-header {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.about-definition {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.about-text {
+    text-align: center;
+    margin-top: 22px;
+    line-height: 1.7;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.about-image {
+    text-align: center;
+    margin-top: 5px;
+}
