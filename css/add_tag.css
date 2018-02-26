@@ -1,0 +1,46 @@
+/* TAG NAME */
+
+.task-title {
+    margin: 25px 0 40px 25px;
+}
+
+.task-title > h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+    
+}
+
+.task-title > input {
+    height: 40px;
+    width: 250px;
+    font-size: 32px;
+    border: none;
+    border-bottom: 1px solid #212121;
+}
+
+/* TAG CATEGORIES */
+
+.tag-category {
+    margin: 25px;
+    font-size: 20px;
+}
+
+/* DONE BUTTON */
+
+.done-button {
+    position: absolute;
+    left: 135px;
+    bottom: 130px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #59C3C3;
+    border-radius: 30px;
+}
+
+.done-button > h3 {
+    margin: 0;
+    font-weight: 300;
+    color: #FFF;
+}
