@@ -54,3 +54,7 @@ button {
     font: inherit;
 	cursor: pointer;
 }
+
+.pointer {
+    cursor: pointer;
+}
