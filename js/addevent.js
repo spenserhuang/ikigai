@@ -2,7 +2,6 @@
 var ikigai_good = 0;
 var ikigai_need = 0;
 var ikigai_paid = 0;
-var wholeday = 0;
 $("#ikigai-love").click(function (e) {
     if (ikigai_love == 0) {
         ikigai_love = 1;
@@ -43,18 +42,58 @@ $("#ikigai-paid").click(function (e) {
         $("#ikigai-paid").css("background", "white");
     }
 });
-$("#wholeday").click(function (e) {
-    if (wholeday == 0) {
-        wholeday = 1;
-        $("#from-time").fadeOut();
-        $("#to-time").fadeOut();
-    }
-    else {
-        wholeday = 0;
-        $("#from-time").fadeIn();
-        $("#to-time").fadeIn();
+$("#wholeday_check").click(function (e) {
+    if (document.getElementById("wholeday_check").checked) {
+        $("#from_date").val("");
+        $("#end_date").val(""); $('.form_datetime').datetimepicker("remove");
+        $('.form_datetime').datetimepicker({
+            weekStart: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1,
+            maxView: 2,
+            minView: 2,
+            viewSelect: 2,
+            format: 'yyyy-mm-dd',
+            initialDate: new Date(),
+        });
+    } else {
+        $("#from_date").val("");
+        $("#end_date").val(""); $('.form_datetime').datetimepicker("remove");
+        $('.form_datetime').datetimepicker({
+            weekStart: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1,
+            maxView: 2,
+            minView: 0,
+            format: 'yyyy-mm-dd hh:ii',
+            initialDate: new Date()
+        });
     }
 });
+
+$('.form_datetime').datetimepicker({
+    weekStart: 1,
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 2,
+    forceParse: 0,
+    showMeridian: 1,
+    maxView: 1
+});
+
 $("#navigator-save").click(function (e) {
+    sessionStorage.setItem("event_from", $("#from_date").val());
+    sessionStorage.setItem("event_to", $("#end_date").val());
+    sessionStorage.setItem("event_title", $("#title").val());
+    sessionStorage.setItem("event_location", $("#location").val());
+    sessionStorage.setItem("event_remind", $("#remind").val());
+    sessionStorage.setItem("event_note", $("#note").val());
     alert("Task \"" + $("#title").val() + "\" has been created!");
+    window.location.href = "calendar.html";
 });
