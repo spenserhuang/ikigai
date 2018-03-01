@@ -4,15 +4,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>add_event</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/pretty-checkbox.min.css" />
     <link rel="stylesheet" href="../css/common.css" />
 </head>
 <body>
     <div class="wrapper">
         <table class="navigator">
             <tr>
-                <td><i class="material-icons navigator-icon">clear</i></td>
+                <td><i class="material-icons navigator-icon pointer" onclick="window.history.go(-1)">clear</i></td>
                 <td><span id="navigator-save" class="pointer">Save</span></td>
             </tr>
         </table>
@@ -23,29 +24,27 @@
                 </div>
                 <div class="input-grid">
                     <i class="material-icons content-icon">access_time</i>
-                    <div>
+                    <div class="date-row">
                         <span class="sign-date">From:</span>
-                        <input type="text" class="general-input input-date" id="from-day" placeholder="day" />
-                        <span class="date-split">/</span>
-                        <input type="text" class="general-input input-date" id="from-month" placeholder="month" />
-                        <span class="date-split">/</span>
-                        <input type="text" class="general-input input-date" id="from-year" placeholder="year" />
-                        <span class="date-split"></span>
-                        <input type="text" class="general-input input-date" id="from-time" placeholder="time" />
+                        <div class="input-group date form_datetime">
+                            <input class="form-control" id="from_date" size="16" type="text" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                        </div>
                     </div>
                     <div class="date-row">
                         <span class="sign-date">To:</span>
-                        <input type="text" class="general-input input-date" id="to-day" placeholder="day" />
-                        <span class="date-split">/</span>
-                        <input type="text" class="general-input input-date" id="to-month" placeholder="month" />
-                        <span class="date-split">/</span>
-                        <input type="text" class="general-input input-date" id="to-year" placeholder="year" />
-                        <span class="date-split"></span>
-                        <input type="text" class="general-input input-date" id="to-time" placeholder="time" />
+                        <div class="input-group date form_datetime margin-left" data-date="2018-03-01T00:00:00" data-date-format="yyyy-mm-dd hh:ii" data-link-field="dtp_input1">
+                            <input class="form-control" id="end_date" size="16" type="text" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                        </div>
                     </div>
                     <div class="date-row">
-                        <span class="sign-date">Whole day</span>
-                        <i class="material-icons wholeday pointer" id="wholeday">autorenew</i>
+                        <div class="pretty p-default p-round p-smooth">
+                            <input type="checkbox" id="wholeday_check" />
+                            <div class="state p-primary">
+                                <label>Whole Day</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="input-grid">
@@ -80,7 +79,9 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/2.2.2/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="../js/addevent.js"></script>
 </body>
 </html>
