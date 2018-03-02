@@ -20,13 +20,13 @@
             
             <div class="task-title">
                 <h2>tag name:</h2>
-                <input type="text" name="" value="">    
+                <input type="text" name="" value="" id="tagname">    
             </div>
             
             <!-- TAG CATEGORIES -->
             <div class="tag-category">
                 <div class="pretty p-default p-round p-smooth">
-                   <input type="checkbox" />
+                   <input type="checkbox" id="love" />
                    <div class="state p-primary">
                        <label>what you like...</label>
                    </div>
@@ -35,7 +35,7 @@
 
             <div class="tag-category">
                 <div class="pretty p-default p-round p-smooth">
-                   <input type="checkbox" />
+                   <input type="checkbox" id="good" />
                    <div class="state p-primary">
                        <label>what you're good at...</label>
                    </div>
@@ -44,7 +44,7 @@
 
             <div class="tag-category">
                 <div class="pretty p-default p-round p-smooth">
-                       <input type="checkbox" />
+                       <input type="checkbox" id="need" />
                        <div class="state p-primary">
                            <label>what the world needs...</label>
                        </div>
@@ -53,7 +53,7 @@
 
             <div class="tag-category">
                 <div class="pretty p-default p-round p-smooth">
-                   <input type="checkbox" />
+                   <input type="checkbox" id="paid" />
                    <div class="state p-primary">
                        <label>what you can be paid for...</label>
                    </div>
@@ -63,13 +63,16 @@
             <!-- DONE BUTTON -->
             
             <a href="#">
-                <button type="button" name="button" class="done-button">
+                <button type="button" name="button" class="done-button" id="submit_tag">
                     <h3>done</h3>
                 </button>
             </a>
             
 
         </div>
+
+        <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="../js/add_tag.js"></script>
    </body>
 </html>
 <!--
