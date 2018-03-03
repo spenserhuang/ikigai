@@ -12,12 +12,14 @@
     float: left;
     margin: 6px 10px 0 0;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .item-title {
     float: left;
     margin: 0;
     width: 130px;
+    font-weight: 400;
 }
 
 .delete-button {
@@ -26,8 +28,83 @@
     margin-left: 5px;  
 }
 
-.edit-button {
-    float: right;
-    width: 25px;
+
+/* ADD PRIORITY */
+.add-form {
+    position: absolute;
+    bottom: 100px;
+    height: 320px;
+    width: 300px;
+    border-top: 1px solid #000;
 }
 
+.add-form-item {
+    margin: 10px;
+}
+
+.add-form-title > input { 
+    height: 30px;
+    font-size: 26px; 
+    font-weight: 400;
+}
+
+.form-item-title {
+    margin: 3px 0;
+    font-weight: 400;
+}
+
+.tag-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tag-buttons > button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #5DC3C2;
+    font-size: 14px;
+    color: #FFF;   
+}
+
+.add-form-notes > input {
+    height: 75px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.final-button {
+    background-color: #5DC3C2;
+    width: 100px;
+    height: 30px;
+    border-radius: 100px;
+    color: #FFF;
+    border: none;
+}
+
+.confirm-buttons {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.discard-button {
+    margin-right: 30px;
+}
+
+/* ADD BUTTON */
+.add-button {
+    position: fixed;
+    bottom: 120px;
+    left: 270px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100px; 
+    background-color: #5DC3C2;
+}
+
+
+.add-button > img { 
+    width: 30px;
+}
