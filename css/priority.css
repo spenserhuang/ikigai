@@ -1,0 +1,33 @@
+.priority-list {
+    margin: 30px 10px;
+}
+
+.priority-item {
+    margin: 5px;
+    width: 270px;
+    height: 35px;
+}
+
+.item-number {
+    float: left;
+    margin: 6px 10px 0 0;
+    font-size: 18px;
+}
+
+.item-title {
+    float: left;
+    margin: 0;
+    width: 130px;
+}
+
+.delete-button {
+    float: right;
+    width: 25px;
+    margin-left: 5px;  
+}
+
+.edit-button {
+    float: right;
+    width: 25px;
+}
+
