@@ -89,6 +89,9 @@ td.today:hover {
     font-size: 28px;
     font-weight: 500;
     color: #9600f1;
+    position: absolute;
+    top: 590px;
+    left: 300px;
 }
 .titleicon:hover {
     font-weight: 700;

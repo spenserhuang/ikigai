@@ -26,6 +26,7 @@
 .navigator-icon {
     display: block;
     font-size: 30px;
+    text-align: left;
 }
 
 #navigator-save {
@@ -115,11 +116,15 @@
 }
 
 .remind-box {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .remind-box1 {
     width: 200px;
+}
+
+.inlineblock {
+    display: inline-block;
 }
 
 .ikigai-choice {
@@ -169,4 +174,21 @@ body {
 
 .margin-left {
     margin-left: 18.3px;
+}
+
+.done-button {
+    width: 175px;
+    height: 20px;
+    border: none;
+    background-color: #59C3C3;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.done-button > h3 {
+    margin: 0;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 18px;
 }
