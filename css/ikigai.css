@@ -1,106 +1,91 @@
 /* TITLE */
-
 h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 34px;
+    margin: 15px;
 }
 
-/* DIAGRAM */
 
-.diagram {
-    margin-left: -60px;
-    width: 420px;
-}
-
-/* ADD */
-
-.done-button {
-    position: absolute;
-    left: 270px;
-    bottom: 108px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #59C3C3;
-    border-radius: 30px;
-}
-
-    .done-button > img {
-        height: 20px;
-    }
+/* GRAPH */
 
 .ikigai-paid-for {
-    border: 1px solid black;
-    width: 75px;
-    height: 90px;
-    border-radius: 120px;
-    padding-left: 45px;
-    padding-top: 30px;
-    font-size: 18px;
-    background-color: rgba(0, 91, 255, 0.50);
-    margin-left: 90px;
+    position: absolute;
+    left: 110px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #52489C;
+    opacity: 0.8;
 }
 
-    .ikigai-paid-for:hover {
-        background-color: rgba(0, 91, 255, 1.0);
-    }
+.ikigai-paid-for:hover {
+    opacity: 1;
+    z-index: 1;
+}
 
 .ikigai-good-at {
-    border: 1px solid black;
-    width: 105px;
-    height: 78px;
-    border-radius: 120px;
-    padding-left: 15px;
-    padding-top: 42px;
-    font-size: 18px;
-    background-color: rgba(141, 230, 130, 0.50);
     position: absolute;
-    top: 315px;
-    left: 65px;
+    margin-left: 7px;
+    margin-top: 70px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #4062BB;
+    opacity: 0.8;
 }
 
-    .ikigai-good-at:hover {
-        background-color: rgb(141, 230, 130);
-    }
+.ikigai-good-at:hover {
+    opacity: 1;
+    z-index: 1;
+}
 
 .ikigai-needs {
-    border: 1px solid black;
-    width: 55px;
-    height: 78px;
-    border-radius: 120px;
-    padding-left: 65px;
-    padding-top: 42px;
-    font-size: 18px;
-    background-color: rgba(176, 56, 190, 0.50);
     position: absolute;
-    top: 315px;
-    left: 175px;
+    margin-top: 70px;
+    margin-left: 143px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #59C3C3;
+    opacity: 0.8;
 }
 
-    .ikigai-needs:hover {
-        background-color: rgba(176, 56, 190, 1.0);
-    }
+.ikigai-needs:hover {
+    z-index: 1;
+    opacity: 1;
+}
 
 .ikigai-love {
-    border: 1px solid black;
-    width: 75px;
-    height: 55px;
-    border-radius: 120px;
-    padding-left: 45px;
-    padding-top: 65px;
-    font-size: 18px;
-    background-color: rgba(217, 208, 29, 0.50);
     position: absolute;
-    top: 365px;
+    margin-top: 136px;
     left: 110px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #F45B69;
+    opacity: 0.8;
 }
 
-    .ikigai-love:hover {
-        background-color: rgba(217, 208, 29, 1.0);
-    }
+.ikigai-love:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+.circle-text {
+    height: 100%;
+    width: 100%;
+    font-size: 21px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* INFO */
 
 .info {
-    margin-top: 120px;
+    position: absolute;
+    margin-top: 300px;
     margin-left: 45px;
     border: 2px solid lightblue;
     border-radius: 15px;
@@ -111,48 +96,55 @@ h2 {
 }
 
 #paid_info {
-    border-color: rgba(0, 91, 255, 1.0);
+    border-color: #52489C;
 }
 
 #good_info {
-    border-color: rgba(141, 230, 130, 1.0);
+    border-color: #4062BB;
 }
 
 #need_info {
-    border-color: rgba(176, 56, 190, 1.0);
+    border-color: #59C3C3;
 }
 
 #love_info {
-    border-color: rgba(217, 208, 29, 1.0);
+    border-color: #F45B69;
+}
+
+/* LEGEND */
+
+.legend {
+    margin-top: 360px;
 }
 
 .legend-spot {
     width: 15px;
     height: 15px;
-    border-radius: 30px;
+    border-radius: 100px;
     display: inline-block;
     margin-left: 45px;
 }
 
 .legend-info {
+    margin-left: 3px;
     display: inline-block;
 }
 
 #legend-paid {
-    background-color: rgba(0, 91, 255, 1.0);
+    background-color: #52489C;
 }
 
 #legend-good {
-    background-color: rgba(141, 230, 130, 1.0);
+    background-color: #4062BB;
 }
 
 #legend-need {
-    background-color: rgba(176, 56, 190, 1.0);
+    background-color: #59C3C3;
 }
 
 #legend-love {
-    background-color: rgba(217, 208, 29, 1.0);
-    margin-left: 7px;
+    background-color: #F45B69;
+    margin-left: 13px;
 }
 
 .legend-info-ikigai {
