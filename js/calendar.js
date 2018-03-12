@@ -71,26 +71,19 @@ function generateCalendar() {
     dayOfWeek = firstday.getDay(),
     days_per_month = new Array(31, 28 + isLeap(y), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31),
     str_nums = Math.ceil((dayOfWeek + days_per_month[m]) / 7),
-    M = new Array("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEPT", "OCT", "NOV", "DEC");
+    M = new Array("january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december");
     var calendar = document.getElementById("calendar");
     var title = document.createElement("h3");
     var titlespan = document.createElement("span");
     titlespan.innerHTML = M[m] + ", " + y;
-    titlespan.style.marginLeft = "100px";
-    titlespan.style.marginRight = "60px";
     title.appendChild(titlespan);
-    var titleicon = document.createElement("i");
-    titleicon.className = "material-icons pointer titleicon";
-    titleicon.innerHTML = "add_circle_outline";
-    titleicon.setAttribute("onclick", "window.location.href='add_event.html'");
-    title.appendChild(titleicon);
     calendar.appendChild(title);
     var table = document.createElement("table");
     table.cellSpacing = 0;
     var thead = table.createTHead();
     var tbody = table.createTBody();
     var tr = document.createElement("tr");
-    var days = new Array("SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT");
+    var days = new Array("sun", "mon", "tue", "wed", "thu", "fri", "sat");
     for (var i = 0; i < 7; i++) {
         th = document.createElement("th");
         th.innerHTML = days[i];

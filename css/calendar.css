@@ -1,58 +1,90 @@
-﻿* {
-	/* old-style reset here :) */
-	border: 0px;
-	padding: 0px;
+* {
+	font-family: Avenir, sans-serif;
+	color: #212121;
 }
 
 h3 {
     margin: 0;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: 500;
 }
 
 table {
 	border-collapse: separate;
-	border: 1px solid #9DABCE;
-	border-width: 0px 0px 1px 1px;
-	margin: 10px auto;
+	border-width: 0px;
 	font-size: 20px;
 }
+
 td, th {
-	width: 81px;
-	height: 81px;
+	width: 80px;
+	height: 60px;
 	text-align: center;
 	vertical-align: middle;
-	background: url(../img/cells.png);
-	color: #444;
+	border: none;
 	position: relative;
 }
+
 th {
 	height: 30px;
-	font-weight: bold;
 	font-size: 14px;
+	font-weight: 400;
+	margin-left: 0px;
+	margin-right: 0px;
 }
+
+/* ADD BUTTON */
+.add-button {
+    position: absolute;
+    bottom: 120px;
+    left: 270px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100px; 
+    background-color: #5DC3C2;
+}
+
+
+.add-button > img { 
+	margin-top: 3px;
+    width: 30px;
+}
+/* 
 td:hover, th:hover {
 	background-position: 0px -81px;
 	color: #222;
 }
+
 td.date_has_event {
 	background-position: 162px 0px;
 	color: white;
 }
+
 td.date_has_event:hover {
 	background-position: 162px -81px;
 }
+
 td.padding {
 	background: url(../img/calpad.jpg);
 }
+
 td.today {
 	background-position: 81px 0px;
 	color: white;
 }
+
 td.today:hover {
 	background-position: 81px -81px;
-}
+} */
+
+/* 
 .events {
 	position: relative;
 }
+
 .events ul {
 	text-align: left;
 	position: absolute;
@@ -72,19 +104,24 @@ td.today:hover {
 	color: #444444;
 	-webkit-box-shadow: 0px 8px 8px #333;
 }
+
 .events li {
 	padding-bottom: 5px;
 }
+
 .events li span {
 	display: block;
 	font-size: 12px;
 	text-align: justify;
 	color: #555;
 }
+
 .events li span.title {
 	font-weight: bold;
 	color: #222;
 }
+*/
+/* 
 .titleicon {
     font-size: 28px;
     font-weight: 500;
@@ -93,7 +130,9 @@ td.today:hover {
     top: 590px;
     left: 300px;
 }
+
 .titleicon:hover {
     font-weight: 700;
     text-shadow: 1px 1px rgba(194, 194, 194, 0.50);
-}
+} 
+ */
