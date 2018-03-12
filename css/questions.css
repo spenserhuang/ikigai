@@ -1,7 +1,16 @@
+/* HEADER */
+.header {
+	padding-top: 4px;
+	color: #FFF;
+	font-weight: 200;
+	font-size: 28px;
+    width: 100%;
+}
+
 /* PROMPT */
 .prompt {
     text-align: center;
-    margin: 50px 30px 20px 30px;
+    margin: 40px 30px 20px 30px;
     font-size: 32px;
     color: #212121;
 }
@@ -80,9 +89,9 @@ button {
 .next-button {
     position: absolute;
     top: 580px;
-    left: 210px;
-    bottom: 130px;
-    width: 75px;
+    left: 200px;
+    bottom: 140px;
+    width: 100px;
     height: 35px;
     border: none;
     background-color: #59C3C3;
@@ -92,9 +101,9 @@ button {
 .back-button {
     position: absolute;
     top: 580px;
-    left: 80px;
+    left: 60px;
     bottom: 130px;
-    width: 75px;
+    width: 100px;
     height: 35px;
     border: none;
     background-color: #59C3C3;

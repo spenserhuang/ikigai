@@ -5,6 +5,7 @@ body {
 	background-image: url("../img/iphoneOL.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
+	font-weight: 400;
 }
 
 #screen {
@@ -42,7 +43,7 @@ a {
 
 .header {
 	padding-top: 4px;
-	margin-right: 45px;
+	margin-right: 40px;
 	color: #FFF;
 	font-weight: 200;
 	font-size: 28px;

@@ -42,17 +42,16 @@
 }
 
 .about-image > img {
-    width: 280px;
+	margin-left: 4px;
     height: 250px;
 }
 
 /* NEXT BUTTON */
 .done-button {
-    position: absolute;
-    left: 135px;
-    bottom: 20px;
+	margin-top: 20px;
+    margin-left: 100px;
     width: 100px;
-    height: 30px;
+	height: 35px;
     border: none;
     background-color: #59C3C3;
     border-radius: 30px;
