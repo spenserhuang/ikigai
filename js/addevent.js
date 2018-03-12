@@ -87,7 +87,7 @@ $('.form_datetime').datetimepicker({
     maxView: 1
 });
 
-$("#navigator-save").click(function (e) {
+$("#submit_event").click(function (e) {
     sessionStorage.setItem("event_from", $("#from_date").val());
     sessionStorage.setItem("event_to", $("#end_date").val());
     sessionStorage.setItem("event_title", $("#title").val());
