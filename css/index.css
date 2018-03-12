@@ -38,7 +38,7 @@
 
 .about-image {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .about-image > img {
@@ -48,7 +48,7 @@
 
 /* NEXT BUTTON */
 .done-button {
-	margin-top: 20px;
+	margin-top: 15px;
     margin-left: 100px;
     width: 100px;
 	height: 35px;

@@ -1,9 +1,9 @@
 .priority-list {
-    margin: 30px 10px;
+    margin: 15px 10px;
 }
 
 .priority-item {
-    margin: 5px;
+    margin: 10px;
     width: 270px;
     height: 35px;
 }
@@ -18,7 +18,7 @@
 .item-title {
     float: left;
     margin: 0;
-    width: 130px;
+    width: 120px;
     font-weight: 400;
 }
 
@@ -32,10 +32,11 @@
 /* ADD PRIORITY */
 .add-form {
     position: absolute;
+    margin-left: 1px;
+    background-color: #FFF;
     bottom: 100px;
-    height: 320px;
-    width: 300px;
-    border-top: 1px solid #000;
+    height: 335px;
+    width: 298px;
 }
 
 .add-form-item {
@@ -44,8 +45,8 @@
 
 .add-form-title > input { 
     height: 30px;
-    font-size: 26px; 
-    font-weight: 400;
+    width: 100%;
+    font-size: 22px; 
 }
 
 .form-item-title {
@@ -68,16 +69,17 @@
     color: #FFF;   
 }
 
-.add-form-notes > input {
+.add-form-notes > textarea {
     height: 75px;
     width: 100%;
     font-size: 16px;
+    border: 0.5px solid #dfdfdf;
 }
 
 .final-button {
     background-color: #5DC3C2;
     width: 100px;
-    height: 30px;
+    height: 35px;
     border-radius: 100px;
     color: #FFF;
     border: none;
@@ -85,7 +87,7 @@
 
 .confirm-buttons {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .discard-button {
@@ -94,7 +96,7 @@
 
 /* ADD BUTTON */
 .add-button {
-    position: fixed;
+    position: absolute;
     bottom: 120px;
     left: 270px;
     width: 35px;

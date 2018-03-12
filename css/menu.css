@@ -4,8 +4,8 @@
 }
 
 .menu-item {
-    height: 64.3px;
-    border: 1px solid #FFF;
+    height: 65.2px;
+    border-top: 1px solid #fff;
     background-color: #4062BB;
 }
 
@@ -17,27 +17,27 @@
 
 .menu-item > img {
     float: left;
-    margin: 15px 10px 0 70px;
+    margin: 15px 15px 0 75px;
     width: 35px;
 }
 
 .menu-title {
-    background-color: #52489C;
+    background-color: #4062BB;
 }
 
 .menu-title > h2 {
     float: left;
-    margin: 10px 0px 10px 110px;
+    margin: 10px 0px 10px 107px;
     color: #FFF;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .menu-title > a > img {
     float: right;
     height: 25px;
     width: 25px;
-    margin: 10px 10px 0 0;
+    margin: 7px 7px 0 0;
 }
 
 form {
@@ -50,7 +50,7 @@ input[type="text"] {
     height: 32px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid #212121;
+    border: none;
     font-size: 14px;
     border-radius: 30px;
 }

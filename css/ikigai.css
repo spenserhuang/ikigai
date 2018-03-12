@@ -25,12 +25,11 @@ h2 {
     border-radius: 30px;
 }
 
-    .done-button > img {
-        height: 20px;
-    }
+.done-button > img {
+    height: 20px;
+}
 
 .ikigai-paid-for {
-    border: 1px solid black;
     width: 75px;
     height: 90px;
     border-radius: 120px;
@@ -41,12 +40,11 @@ h2 {
     margin-left: 90px;
 }
 
-    .ikigai-paid-for:hover {
-        background-color: rgba(0, 91, 255, 1.0);
-    }
+.ikigai-paid-for:hover {
+    background-color: rgba(0, 91, 255, 1.0);
+}
 
 .ikigai-good-at {
-    border: 1px solid black;
     width: 105px;
     height: 78px;
     border-radius: 120px;
@@ -59,12 +57,11 @@ h2 {
     left: 65px;
 }
 
-    .ikigai-good-at:hover {
-        background-color: rgba(18, 255, 0, 1.0);
-    }
+.ikigai-good-at:hover {
+    background-color: rgba(18, 255, 0, 1.0);
+}
 
 .ikigai-needs {
-    border: 1px solid black;
     width: 55px;
     height: 78px;
     border-radius: 120px;
@@ -77,12 +74,11 @@ h2 {
     left: 175px;
 }
 
-    .ikigai-needs:hover {
-        background-color: rgba(176, 56, 190, 1.0);
-    }
+.ikigai-needs:hover {
+    background-color: rgba(176, 56, 190, 1.0);
+}
 
 .ikigai-love {
-    border: 1px solid black;
     width: 75px;
     height: 55px;
     border-radius: 120px;
@@ -95,9 +91,9 @@ h2 {
     left: 110px;
 }
 
-    .ikigai-love:hover {
-        background-color: rgba(217, 208, 29, 1.0);
-    }
+.ikigai-love:hover {
+    background-color: rgba(217, 208, 29, 1.0);
+}
 
 .info {
     margin-top: 120px;

@@ -38,11 +38,11 @@ button {
 }
 
 .notes-list {
-    margin: 30px 10px;
+    margin: 35px 10px;
 }
 
 .notes-item {
-    margin: 5px;
+    margin: 10px;
     width: 270px;
     height: 35px;
 }
@@ -70,7 +70,7 @@ button {
 
 /* ADD BUTTON */
 .add-button {
-    position: fixed;
+    position: absolute;
     bottom: 120px;
     left: 270px;
     width: 35px;

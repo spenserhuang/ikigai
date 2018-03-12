@@ -2,7 +2,9 @@
     <head>
         <title>Priority List</title>
         <link rel="stylesheet" type="text/css" href="../css/ipod.css"/>
-        <link rel="stylesheet" type="text/css" href="../css/priority.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/priority.css"/>   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/priority.js"></script>
     </head>
     <body>
         <div id="screen">
@@ -11,7 +13,7 @@
             <div class="head-bar">
                 <a href="menu.html"><img src="../img/menu-white.png" alt="" class="menu-button"></a> 
                 <a href="my_ikigai.html"><img src="../img/home-white.png" alt="" class="home-button"></a> 
-                <a href="my_ikigai.html"><h1 class="header">priorities</h1></a> 
+                <h1 class="header">priorities</h1>
             </div>
 
             <!-- PRIORITY LIST -->
@@ -19,37 +21,53 @@
                 <div class="priority-item">
                     <h2 class="item-number">1.</h2>
                     <h2 class="item-title">values</h2>
-                    <img src="../img/delete-black.png" alt="" class="delete-button">
+                    <!-- <img src="../img/delete-black.png" alt="" class="delete-button"> -->
                 </div>
                 
-
+                <div class="priority-item">
+                    <h2 class="item-number">2.</h2>
+                    <h2 class="item-title">family</h2>
+                    <!-- <img src="../img/delete-black.png" alt="" class="delete-button"> -->
+                </div>
+                
+                <div class="priority-item">
+                    <h2 class="item-number">3.</h2>
+                    <h2 class="item-title">adventures</h2>
+                    <!-- <img src="../img/delete-black.png" alt="" class="delete-button"> -->
+                </div>
+                
+                <div class="priority-item">
+                    <h2 class="item-number">4.</h2>
+                    <h2 class="item-title">blockchain</h2>
+                    <!-- <img src="../img/delete-black.png" alt="" class="delete-button"> -->
+                </div>
             </div>
             
             <!-- ADD PRIORITY -->
-            <!-- <div class="add-form">
+            <div class="add-form" id="form">
                 <div class="add-form-title add-form-item">
-                    <h3 class="form-item-title">name:</h3>
+                    <h3 class="form-item-title">tag name:</h3>
                     <input type="text" name="" value="">
                 </div>
                 <div class="add-form-tag add-form-item">
                     <h3 class="form-item-title">tag:</h3>
                     <div class="tag-buttons">
-                        <button type="button" name="button">love</button>
-                        <button type="button" name="button">paid</button>
-                        <button type="button" name="button">need</button>
-                        <button type="button" name="button">good</button>
+                        <button type="button" name="button" id="love-button">love</button>
+                        <button type="button" name="button" id="paid-button">paid</button>
+                        <button type="button" name="button" id="need-button">need</button>
+                        <button type="button" name="button" id="good-button">good</button>
                     </div>
                 </div>
                 <div class="add-form-notes add-form-item">
                     <h3 class="form-item-title">notes:</h3>
-                    <input type="text" name="" value="">
+                    <textarea name="content" rows="8" cols="80" class="content"></textarea>
                 </div>
                 <div class="confirm-buttons">
                     <button type="button" name="button" class="discard-button final-button">discard</button>
                     <button type="button" name="button" class="save-button final-button">save</button>    
                 </div>
             </div>
-             -->
+            
             <!-- ADD BUTTON -->
             <button type="" name="+" class="add-button">
                 <img src="../img/add-white.png" alt="">
