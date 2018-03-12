@@ -22,7 +22,7 @@
     left: 135px;
     bottom: 145px;
     width: 100px;
-    height: 30px;
+    height: 35px;
     border: none;
     background-color: #59C3C3;
     border-radius: 30px;
@@ -41,13 +41,13 @@
     width: 300px;
     height: 40px;
     background-color: #4062BB;
-    /* text-align:   center; */
 }
 
-.more-bar > img {
+.bar-buttons {
     position: absolute;
     height: 30px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .settings-button {
@@ -58,3 +58,68 @@
     right: 10px;    
 }
     
+/* SETTINGS ITEMS */
+.setting-items {
+    position: absolute;
+    bottom: 93px;
+    width: 300px;
+    height: 40px;
+    background-color: #4062BB;
+}
+
+.setting {
+    left: 10px;
+}
+
+.attach {
+    margin-left: 60px;
+}
+
+.camera {
+    margin-left: 110px;
+}
+
+.image {
+    margin-left: 163px;
+}
+
+.draw {
+    margin-left: 210px;
+}
+
+.voice {
+    margin-left: 255px;
+}
+
+/* MORE ITEMS */
+.more-items {
+    position: absolute;
+    bottom: 93px;
+    width: 300px;
+    height: 40px;
+    background-color: #4062BB;
+}
+
+.delete {
+    left: 10px;
+}
+
+.copy {
+    margin-left: 60px;
+}
+
+.forward {
+    margin-left: 110px;
+}
+
+.collab {
+    margin-left: 163px;
+}
+
+.label {
+    margin-left: 210px;
+}
+
+.more {
+    right: 10px;    
+}
