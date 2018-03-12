@@ -71,7 +71,7 @@ button {
 /* ADD BUTTON */
 .add-button {
     position: absolute;
-    bottom: 120px;
+    top: 575px;
     left: 270px;
     width: 35px;
     height: 35px;

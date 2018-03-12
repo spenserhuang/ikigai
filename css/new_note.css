@@ -20,7 +20,7 @@
 .done-button {
     position: absolute;
     left: 135px;
-    bottom: 145px;
+    top: 545px;
     width: 100px;
     height: 35px;
     border: none;
@@ -37,7 +37,7 @@
 /* MORE BAR */
 .more-bar {
     position: absolute;
-    bottom: 93px;
+    top: 595px;
     width: 300px;
     height: 40px;
     background-color: #4062BB;
@@ -61,7 +61,7 @@
 /* SETTINGS ITEMS */
 .setting-items {
     position: absolute;
-    bottom: 93px;
+    top: 595px;
     width: 300px;
     height: 40px;
     background-color: #4062BB;
@@ -94,7 +94,7 @@
 /* MORE ITEMS */
 .more-items {
     position: absolute;
-    bottom: 93px;
+    top: 595px;
     width: 300px;
     height: 40px;
     background-color: #4062BB;

@@ -34,7 +34,7 @@
     position: absolute;
     margin-left: 1px;
     background-color: #FFF;
-    bottom: 100px;
+    top: 300px;
     height: 335px;
     width: 298px;
 }
@@ -97,7 +97,7 @@
 /* ADD BUTTON */
 .add-button {
     position: absolute;
-    bottom: 120px;
+    top: 575px;
     left: 270px;
     width: 35px;
     height: 35px;
