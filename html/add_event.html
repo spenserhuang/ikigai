@@ -3,79 +3,105 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>add_event</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/pretty-checkbox.min.css" />
+    <link rel="stylesheet" href="../css/ipod.css" />
     <link rel="stylesheet" href="../css/add_event.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../js/addevent.js"></script>
+    <script type="text/javascript" src="../js/priority.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <table class="navigator">
-            <tr>
-                <td><i class="material-icons navigator-icon pointer" onclick="window.history.go(-1)">clear</i></td>
-                <td><!--<span id="navigator-save" class="pointer">Save</span>--></td>
-            </tr>
-        </table>
+    <div id="screen">
+        <!-- ADD TAG -->
+        <div class="head-bar">
+            <a href="calendar.html"><img src="../img/left-point-white.png" alt="" class="menu-button"></a> 
+            <h1 class="header">add event</h1>
+        </div>
+        
         <div class="content">
-            <form id="dataform" action="#" method="get">
-                <div class="input-grid">
-                    <input type="text" id="title" placeholder="Input headline" class="general-input">
+            <!-- EVENT TITLE -->
+            <div class="input-grid">
+                <input type="text" id="title" placeholder="event title" class="general-input">
+            </div>
+            
+            <!-- EVENT TIME -->
+            <div class="event-time item">
+                <img src="../img/time-black.png" alt="" class="form-item-img">
+                <h3 class="form-item-title">time:</h3>
+                <form class="time-input">
+                    <h5>start</h5><input type="datetime-local" name="" value="">
+                    <h5>end</h5><input type="datetime-local" name="" value="">
+                </form>
+            </div>
+            
+            <!-- LOCATION -->
+            <div class="event-location item">
+                <img src="../img/location-black.png" alt="" class="form-item-img">
+                <h3 class="form-item-title">location:</h3>
+                <input type="text" id="title" placeholder="address" class="general-input">
+            </div>
+            
+            <!-- TAGS -->
+            <div class="event-tags item">
+                <img src="../img/label-outline-black.png" alt="" class="form-item-img">
+                <h3 class="form-item-title">tags:</h3>
+                <div class="tag-buttons">
+                    <button type="button" name="button" id="love-button">love</button>
+                    <button type="button" name="button" id="paid-button">paid</button>
+                    <button type="button" name="button" id="need-button">need</button>
+                    <button type="button" name="button" id="good-button">good</button>
                 </div>
-                <div class="input-grid">
-                    <i class="material-icons content-icon">access_time</i>
-                    <div class="date-row">
-                        <span class="sign-date">From:</span>
-                        <div class="input-group date form_datetime">
-                            <input class="form-control" id="from_date" size="16" type="text" value="" readonly>
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-                        </div>
-                    </div>
-                    <div class="date-row">
-                        <span class="sign-date">To:</span>
-                        <div class="input-group date form_datetime margin-left" data-date="2018-03-01T00:00:00" data-date-format="yyyy-mm-dd hh:ii" data-link-field="dtp_input1">
-                            <input class="form-control" id="end_date" size="16" type="text" value="" readonly>
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-                        </div>
-                    </div>
+            </div>
+            
+            <!-- NOTES -->
+            <div class="event-notes item">
+                <img src="../img/event-note-black.png" alt="" class="form-item-img">
+                <h3 class="form-item-title">notes:</h3>
+                <textarea name="content" rows="8" cols="80" class="content"></textarea>
+            </div>
+
+
+            <!-- <div class="input-grid">
+                <i class="material-icons content-icon">location_on</i>
+                <input type="text" class="general-input" id="location" placeholder="location" />
+            </div> -->
+            <!-- <div class="input-grid">
+                <i class="material-icons content-icon inlineblock">alarm</i>
+                <div class="remind-box inlineblock">
+                    <span class="remind">Remind me</span>
+                    <input type="text" class="general-input" id="remind" placeholder="?" />
+                    <span class="remind">min before</span>
                 </div>
-                <div class="input-grid">
-                    <i class="material-icons content-icon">location_on</i>
-                    <input type="text" class="general-input" id="location" placeholder="location" />
-                </div>
-                <div class="input-grid">
-                    <i class="material-icons content-icon inlineblock">alarm</i>
-                    <div class="remind-box inlineblock">
-                        <span class="remind">Remind me</span>
-                        <input type="text" class="general-input" id="remind" placeholder="?" />
-                        <span class="remind">min before</span>
-                    </div>
-                </div>
-                <div class="input-grid">
-                    <i class="material-icons content-icon">event_note</i>
-                    <input type="text" class="general-input" id="note" placeholder="Note" />
-                </div>
-                <div class="">
-                    <i class="material-icons content-icon inline">donut_large</i>
-                    <span class="remind inline">Add Ikigai Tags:</span>
-                    <table class="i-table">
-                        <tr>
-                            <td><div class="ikigai-choice pointer noselect" id="ikigai-love">Love&nbsp;<i class="material-icons i-c">close</i></div></td>
-                            <td><div class="ikigai-choice pointer noselect" id="ikigai-good">Good&nbsp;<i class="material-icons i-c">close</i></div></td>
-                            <td><div class="ikigai-choice pointer noselect" id="ikigai-need">Need&nbsp;<i class="material-icons i-c">close</i></div></td>
-                            <td><div class="ikigai-choice pointer noselect" id="ikigai-paid">Paid&nbsp;<i class="material-icons i-c">close</i></div></td>
-                        </tr>
-                    </table>
-                </div>
-            </form>
-            <button type="button" name="button" class="done-button" id="submit_tag">
-                <h3>Save</h3>
-            </button>
+            </div> -->
+            <!-- <div class="input-grid">
+                <i class="material-icons content-icon">event_note</i>
+                <input type="text" class="general-input" id="note" placeholder="Note" />
+            </div> -->
+            <!-- <div class="">
+                <i class="material-icons content-icon inline">donut_large</i>
+                <span class="remind inline">Add Ikigai Tags:</span>
+                <table class="i-table">
+                    <tr>
+                        <td><div class="ikigai-choice pointer noselect" id="ikigai-love">Love&nbsp;<i class="material-icons i-c">close</i></div></td>
+                        <td><div class="ikigai-choice pointer noselect" id="ikigai-good">Good&nbsp;<i class="material-icons i-c">close</i></div></td>
+                        <td><div class="ikigai-choice pointer noselect" id="ikigai-need">Need&nbsp;<i class="material-icons i-c">close</i></div></td>
+                        <td><div class="ikigai-choice pointer noselect" id="ikigai-paid">Paid&nbsp;<i class="material-icons i-c">close</i></div></td>
+                    </tr>
+                </table>
+            </div> -->
+        
+            <a href="html/calendar.html">
+                <button type="button" name="button" class="done-button" id="submit_tag">
+                    <h3>save</h3>
+                </button>
+            </a>
+            
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://cdn.bootcss.com/twitter-bootstrap/2.2.2/bootstrap.min.js"></script>
-    <script src="../js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="../js/addevent.js"></script>
+
 </body>
 </html>
