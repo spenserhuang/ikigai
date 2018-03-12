@@ -14,7 +14,7 @@
         <table class="navigator">
             <tr>
                 <td><i class="material-icons navigator-icon pointer" onclick="window.history.go(-1)">clear</i></td>
-                <td><span id="navigator-save" class="pointer">Save</span></td>
+                <td><!--<span id="navigator-save" class="pointer">Save</span>--></td>
             </tr>
         </table>
         <div class="content">
@@ -52,8 +52,8 @@
                     <input type="text" class="general-input" id="location" placeholder="location" />
                 </div>
                 <div class="input-grid">
-                    <i class="material-icons content-icon">alarm</i>
-                    <div class="remind-box">
+                    <i class="material-icons content-icon inlineblock">alarm</i>
+                    <div class="remind-box inlineblock">
                         <span class="remind">Remind me</span>
                         <input type="text" class="general-input" id="remind" placeholder="?" />
                         <span class="remind">min before</span>
@@ -76,6 +76,9 @@
                     </table>
                 </div>
             </form>
+            <button type="button" name="button" class="done-button" id="submit_tag">
+                <h3>Save</h3>
+            </button>
         </div>
     </div>
 
