@@ -1,52 +1,13 @@
 $(function () {
     generateCalendar();
-	$('.date_has_event').each(function () {
-		var distance = 10;
-		var time = 250;
-		var hideDelay = 500;
-
-		var hideDelayTimer = null;
-
-		var beingShown = false;
-		var shown = false;
-
-		var trigger = $(this);
-		var popup = $('.events ul', this).css('opacity', 0);
-
-		$([trigger.get(0), popup.get(0)]).mouseover(function () {
-			if (hideDelayTimer) clearTimeout(hideDelayTimer);
-			if (beingShown || shown) {
-				return;
-			} else {
-				beingShown = true;
-				popup.css({
-					bottom: 20,
-					left: -76,
-					display: 'block'
-				})
-				.animate({
-					bottom: '+=' + distance + 'px',
-					opacity: 1
-				}, time, 'swing', function() {
-					beingShown = false;
-					shown = true;
-				});
-			}
-		}).mouseout(function () {
-			if (hideDelayTimer) clearTimeout(hideDelayTimer);
-			hideDelayTimer = setTimeout(function () {
-				hideDelayTimer = null;
-				popup.animate({
-					bottom: '-=' + distance + 'px',
-					opacity: 0
-				}, time, 'swing', function () {
-					shown = false;
-					popup.css('display', 'none');
-				});
-			}, hideDelay);
-		});
-	});
-	
+    $('.e').each(function () {
+        var popup = $('.eventx', this);
+        $($(this).get(0), popup.get(0)).mouseover(function () {
+            popup.css('display', 'block');
+        }).mouseout(function () {
+            popup.css('display', 'none');
+        });
+    });
 });
 
 function isLeap(year) {
@@ -99,38 +60,76 @@ function generateCalendar() {
             (date <= 0 || date > days_per_month[m]) ? date = ' ' : date = idx - dayOfWeek + 1;
             var compareDateMin = new Date(y, m, date, 0, 0, 0);
             var compareDateMax = new Date(y, m, date, 23, 59, 59);
-            if (session_flag && event_from <= compareDateMax && event_to >= compareDateMin) {
+            //if (session_flag && event_from <= compareDateMax && event_to >= compareDateMin) {
+                //td = document.createElement("td");
+                //td.className = "date_has_event";
+                //td.innerHTML = date;
+                //var innerdiv = document.createElement("div");
+                //innerdiv.className = "events";
+                //var innerul = document.createElement("ul");
+                //var innerli = document.createElement("li");
+                //var titlespan = document.createElement("span");
+                //titlespan.className = "title";
+                //titlespan.innerHTML = sessionStorage.getItem("event_title");
+                //innerli.appendChild(titlespan);
+                //var descspan = document.createElement("span");
+                //descspan.className = "desc";
+                //descspan.innerHTML = "From:" + sessionStorage.getItem("event_from") + "<br />" +
+                //    "To:" + sessionStorage.getItem("event_to") + "<br />" +
+                //    "Location:" + sessionStorage.getItem("event_location") + "<br />" +
+                //    "Remind:" + sessionStorage.getItem("event_remind") + "<br />" +
+                //    "Note:" + sessionStorage.getItem("event_note");
+                //innerli.appendChild(descspan);
+                //innerul.appendChild(innerli);
+                //innerdiv.appendChild(innerul);
+                //td.appendChild(innerdiv);
+            //tr.appendChild(td);
+            if (date == "9" || date == "16" || date == "23" || date == "30" || date == "5" || date == "19") {
                 td = document.createElement("td");
-                td.className = "date_has_event";
+                td.className = "e";
                 td.innerHTML = date;
-                var innerdiv = document.createElement("div");
-                innerdiv.className = "events";
-                var innerul = document.createElement("ul");
-                var innerli = document.createElement("li");
-                var titlespan = document.createElement("span");
-                titlespan.className = "title";
-                titlespan.innerHTML = sessionStorage.getItem("event_title");
-                innerli.appendChild(titlespan);
-                var descspan = document.createElement("span");
-                descspan.className = "desc";
-                descspan.innerHTML = "From:" + sessionStorage.getItem("event_from") + "<br />" +
-                    "To:" + sessionStorage.getItem("event_to") + "<br />" +
-                    "Location:" + sessionStorage.getItem("event_location") + "<br />" +
-                    "Remind:" + sessionStorage.getItem("event_remind") + "<br />" +
-                    "Note:" + sessionStorage.getItem("event_note");
-                innerli.appendChild(descspan);
-                innerul.appendChild(innerli);
-                innerdiv.appendChild(innerul);
-                td.appendChild(innerdiv);
+                var event3 = document.createElement("div");
+                event3.className = "common-event bg-color1";
+                event3.innerHTML = "DL";
+                td.appendChild(event3);
+                var eventx = document.createElement("div");
+                eventx.className = "eventx bg-color1";
+                eventx.innerHTML = "Type: Class<br />Time: 10:20-12:00<br />";
+                td.appendChild(eventx);
                 tr.appendChild(td);
-            } else if (compareDateMin == today) {
+            } else if (date == "1" || date == "8" || date == "15" || date == "22") {
                 td = document.createElement("td");
-                td.className = "today";
+                td.className = "e";
                 td.innerHTML = date;
+                var event3 = document.createElement("div");
+                event3.className = "common-event bg-color2";
+                event3.innerHTML = "HCI";
+                td.appendChild(event3);
+                var eventx = document.createElement("div");
+                eventx.className = "eventx bg-color2";
+                eventx.innerHTML = "Type: Practice<br />Time: 10:20-12:00<br />";
+                td.appendChild(eventx);
+                tr.appendChild(td);
+            } else if (date == "6" || date == "12" || date == "27") {
+                td = document.createElement("td");
+                td.className = "e";
+                td.innerHTML = date;
+                var event3 = document.createElement("div");
+                event3.className = "common-event bg-color3";
+                event3.innerHTML = "UIUC";
+                td.appendChild(event3);
+                var eventx = document.createElement("div");
+                eventx.className = "eventx bg-color3";
+                eventx.innerHTML = "Type: Research<br />Time: 10:20-12:00<br />";
+                td.appendChild(eventx);
                 tr.appendChild(td);
             } else {
                 td = document.createElement("td");
                 td.innerHTML = date;
+                var event3 = document.createElement("div");
+                event3.className = "common-event bg-color0";
+                event3.innerHTML = "DL";
+                td.appendChild(event3);
                 tr.appendChild(td);
             }
         }
