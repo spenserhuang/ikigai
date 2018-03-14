@@ -78,17 +78,29 @@ th {
 }
 
 .bg-color3 {
-    background: #9ab8de;
+    background: #52489C;
+	font-size: 11px;
+	width: 40px;
+	border: none;
 }
 
 .bg-color2 {
-    background: #cd9ade;
+    background: #4062BB;
+	font-size: 11px;
+	width: 40px;
+	border: none;
 }
 
 .bg-color1 {
-    background: #4bceb6;
+    background: #F45B69;
+	font-size: 11px;
+	width: 40px;
+	border: none;
 }
 
 .bg-color0 {
     background: #FFFFFF;
+	font-size: 11px;
+	width: 40px;
+	border: none;
 }
